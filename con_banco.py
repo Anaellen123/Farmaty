@@ -5,7 +5,7 @@ config = {
     'user': 'root',
     'password': 'G-op198Ana',
     'host': '127.0.0.1',
-    'database': 'jogoteca',
+    'database': 'farmaty',
     'raise_on_warnings': True
 
 
