@@ -1,8 +1,8 @@
 #administrar 80mg/ kg por dia a cada 6horas
 
 def app ():
-    #dosagem_por_kilo = dosagem_kilo()
-    #dosagem_por_hora = total_consumo()
+    dosagem_por_kilo = dosagem_kilo()
+    dosagem_por_hora = total_consumo()
     dosagem_por_ml_a_hora = consumo_ml()
 
 def consumo_ml():
