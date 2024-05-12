@@ -46,9 +46,9 @@
 
 
 #section1{
-    height: 470px;
+    height: 670px;
     background-color: #fff;
-    width: 100%;
+    width: 98%;
     position: relative;
     top: 10px;
     border-radius: 10px
@@ -56,22 +56,27 @@
 
 }
 
-#section2{
-    height: 150px;
 
-}
 
 #section3{
     display: flex;
 
 }
-
-#calculador{
-    height:450px;
+#section2{
+    height: 150px;
     width: 100%;
     background-color: #d3d3d3;
     position: relative;
     top: 7px;
+    border-radius: 10px;
+
+}
+#calculador{
+    height:250px;
+    width: 100%;
+    background-color: #d3d3d3;
+    position: relative;
+    top: 15px;
     border-radius: 10px;
 
 }
