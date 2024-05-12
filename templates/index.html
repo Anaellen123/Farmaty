@@ -36,16 +36,19 @@
                         <section id="dosagem">
                             <h3>Calculo de Dosagem</h3><br>
                             <p><strong>Quantas mg/ml(miligrama por ml) vem no frasco?</strong></p>
-                                <form>
-                                    <label for="fname"><strong>Quantas mg? :</strong></label>
-                                    <input type="text" id="fname" name="fname"><br><br>
-                                    <label for="lname"><strong>quantas ml? :</strong></label>
-                                    <input type="text" id="lname" name="lname">
+                                <form action="{{url_for('criar') }}" method="post">
+                                    <label for="mg"><strong>Quantas mg? :</strong></label>
+                                    <input type="text" id="mg" name="mg"><br><br>
+                                    <label for="ml"><strong>quantas ml? :</strong></label>
+                                    <input type="text" id="ml" name="ml"><br><br>
+                                    <label for="dose"><strong>quantas miligramas por dose? :</strong></label>
+                                    <input type="text" id="dose" name="dose">
                                 </form>
                         </section>
                         <section id="posologia">
                             <h3>Posologia</h3>
                             <div  id="menssagem">
+                                <p></p>
 
                             </div>
                         </section>
