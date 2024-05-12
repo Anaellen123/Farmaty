@@ -63,7 +63,7 @@
 
 }
 #section2{
-    height: 150px;
+    height: 200px;
     width: 100%;
     background-color: #d3d3d3;
     position: relative;
@@ -88,5 +88,13 @@
 
 #posologia{
     width: 50%;
+
+}
+
+#menssagem{
+    height: 150px;
+    width: 50%;
+    background-color: #fff;
+    border: 1px solid #000;
 
 }

@@ -1,9 +1,7 @@
 #administrar 80mg/ kg por dia a cada 6horas
 
 def app ():
-    dosagem_por_kilo = dosagem_kilo()
-    dosagem_por_hora = total_consumo()
-    dosagem_por_ml_a_hora = consumo_ml()
+    div_horario = horas_dia()
 
 def consumo_ml():
 
@@ -28,6 +26,9 @@ def dosagem_kilo():
     multiplicacao = dosagem * kilos
     print(multiplicacao)
 
-
+def horas_dia():
+    vezes = int(input("Irá tomar quantas vezes ao dia? :"))
+    divs = 24 / vezes
+    print("Ira tomar o medicamento a cada {} horas".format(divs))
 if __name__ == ("__main__") :
     app()
