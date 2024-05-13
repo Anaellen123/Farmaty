@@ -1,5 +1,16 @@
 #administrar 80mg/ kg por dia a cada 6horas
 
+
+class calculo:
+    def __init__(self, dosagem, mg, ml,hora):
+        self.dosagem = dosagem
+        self.mg = mg
+        self.ml = ml
+        self.hora = hora
+
+    def total_consumo(self, dosagem):
+        mg_total = dosagem
+        mg
 def app ():
     div_horario = horas_dia()
 
