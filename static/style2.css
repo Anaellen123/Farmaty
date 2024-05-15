@@ -1,8 +1,14 @@
 #bottom{
-    background-color: #d3d3d3 ;
+    background-color: #87CEFA;
     height: 1000px;
 }
+#aspecto_borda {
+    position: relative;
+    top: 10px;
+    border-radius: 10px;
+    height: 950px;
 
+}
 #conteudo{
     width: 100%;
     height: 900px;
@@ -44,10 +50,28 @@
 }
 /*fechamento da estilização do titulo bem vindo ao farmaty*/
 
+#info{
+    height: 50px;
+    width: 100%;
+    background-color: #87CEFA;
+    position: relative;
+    top: 7px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #000;
+    box-shadow: 5px 10px;
+}
+
+#info p{
+     position: relative;
+     top: 6px;
+     font-size: 20px;
+
+}
 
 #section1{
     height: 670px;
-    background-color: #fff;
+    background-color: #E0FFFF;
     width: 98%;
     position: relative;
     top: 10px;
@@ -65,19 +89,23 @@
 #section2{
     height: 200px;
     width: 100%;
-    background-color: #d3d3d3;
+    background-color: #87CEFA;
     position: relative;
-    top: 7px;
+    top: 23px;
     border-radius: 10px;
+    border: 1px solid #000;
+    box-shadow: 5px 10px;
 
 }
 #calculador{
     height:350px;
     width: 100%;
-    background-color: #d3d3d3;
+    background-color: #87CEFA;
     position: relative;
-    top: 15px;
+    top: 40px;
     border-radius: 10px;
+    border: 1px solid #000;
+    box-shadow: 5px 10px;
 
 }
 
@@ -109,4 +137,8 @@
     box-shadow: 5px 10px;
 
 
+}
+
+input{
+    border-radius: 10px;
 }
