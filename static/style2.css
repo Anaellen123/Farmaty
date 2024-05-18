@@ -123,9 +123,9 @@
 #menssagem{
     height: 290px;
     width: 50%;
-    background-color: #bdbebd;
     border: 1px solid #000;
     border-radius: 10px;
+    box-shadow: 5px 10px
 
 }
 .linha{
@@ -133,7 +133,7 @@
     border-radius: 10px;
     width: 100%;
     height: 25px;
-    background-color: #a9a9a9;
+    background-color: #87CEFA;
     box-shadow: 5px 10px;
 
 
