@@ -2,15 +2,39 @@
 
 
 class calculo:
-    def __init__(self, dosagem, mg, ml,hora):
+    def __init__(self, dosagem, mg, ml, vezes_a_tomar):
         self.dosagem = dosagem
         self.mg = mg
         self.ml = ml
-        self.hora = hora
+        self.vezes_a_tomar = vezes_a_tomar
 
-    def total_consumo(self, dosagem):
-        mg_total = dosagem
-        mg
+    def total_consumo(self, dosagem, vezes_a_tomar):
+        total_por_dosagem = dosagem / vezes_a_tomar
+        print(total_por_dosagem)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 def app ():
     div_horario = horas_dia()
 

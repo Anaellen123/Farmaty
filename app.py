@@ -19,7 +19,8 @@ def consumo_ml():
     calc1 = mg * dose_ml
     calc2 = quantidade_mg_dose * ml
     result = calc2 / calc1
-    return "o paciente devera tomar {}ml a cada hora preescrita".format(result), redirect(url_for('index'))
+    result.append
+    return  redirect(url_for('index'))
 
 
 app.run(debug=True)
