@@ -12,6 +12,7 @@ def index():
 
 @app.route('/index', methods=['POST',])
 def consumo_ml():
+
     quantidade_mg_dose = request.form['dose']
     mg = request.form['mg']
     ml = request.form['ml']
@@ -19,7 +20,8 @@ def consumo_ml():
     calc1 = mg * dose_ml
     calc2 = quantidade_mg_dose * ml
     result = calc2 / calc1
-    result.append
+    result.append[result]
+
     return  redirect(url_for('index'))
 
 
