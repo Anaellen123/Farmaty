@@ -9,13 +9,25 @@ class dosagem:
           self.mg = mg
           self.ml = ml
 
+     def consumo_por_ml(self, dose, mg, ml):
+          quantidade_mg_dose = dose
+          mg_embalagem = mg
+          total_ml_da_embalagem = ml
+
+         #regra de 3
+          x = 1
+          calc1 = mg_embalagem * x
+          calc2 = quantidade_mg_dose * total_ml_da_embalagem
+          result = calc2 / calc1
+          return result
+
 
 lista = []
 
 @app.route("/")
 def index():
 
-     return render_template("index.html", titulo='Posologia', paciente=lista)
+     return render_template("index.html", paciente=lista)
 
 @app.route('/criar', methods=['POST', ])
 def criar():

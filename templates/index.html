@@ -60,26 +60,26 @@
                         </section>
                         <section id="posologia">
 
-                            <h3>{{ titulo }}</h3>
+                            <h3>Posologia:</h3>
 
                                 <div class="container bg-primary" id="menssagem"><br>
                                 {% for x in paciente %}
                                     <div class="linha ">
 
 
-                                        <p>SERa{{ x.dose }}ml</p>
+                                        <p><strong>Para tomar{{ x.dose }}mg da dose preescrita</strong></p>
 
                                     </div><br>
 
                                     <div class="linha ">
 
-                                         <p>o frasco possui{{ x.mg }}</p>
+                                         <p><strong>será nescessario{{  }}ml a cada</strong></p>
 
                                     </div><br>
 
                                     <div class="linha ">
 
-                                        <p>de um recipiente{{ x.ml }}</p>
+                                        <p><strong>{{ x.mg }}horas pelo periodo preescrito</strong></p>
 
                                     </div><br>
 

@@ -122,7 +122,7 @@
 
 #menssagem{
     height: 290px;
-    width: 50%;
+    width: 55%;
     border: 1px solid #000;
     border-radius: 10px;
     box-shadow: 5px 10px
@@ -135,6 +135,7 @@
     height: 25px;
     background-color: #87CEFA;
     box-shadow: 5px 10px;
+    text-align: center;
 
 
 }
