@@ -15,3 +15,22 @@
                             </div>
                 </section>
 {% endblock %}
+
+ <section id="dosagem">
+                            <h3>Calculo de Dosagem</h3><br>
+                            <p><strong>quantas miligramas por dose está preescrita na receita?</strong></p>
+                                <form>
+                                    <label for="dose"><strong>dosagem? :</strong></label>
+                                    <input type="text" id="dose" name="dose"><br><br>
+                                </form>
+                            <p><strong>Quantas mg/ml(miligrama por ml) vem no frasco?</strong></p>
+                                <form action="{{url_for('index') }}" method="post">
+
+                                    <label for="mg"><strong>Quantas mg? :</strong></label>
+                                    <input type="text" id="mg" name="mg"><br><br>
+                                    <label for="ml"><strong>quantas ml? :</strong></label>
+                                    <input type="text" id="ml" name="ml">
+                                    <button type="submit" class="btn btn-primary btn-salvar">Salvar</button>
+
+                                </form>
+                        </section>
