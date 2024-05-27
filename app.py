@@ -39,13 +39,11 @@ def criar():
      poso = dosagem(dose, mg, ml)
      lista.append(poso)
 
-     x = 1
-     calc1 = mg * x
-     calc2 = dose * ml
-     result = calc2 / calc1
+     result = "Será necessário {} ml a cada ".format(poso.consumo_por_ml(dose,mg,ml))
 
 
-     return render_template('index.html', paciente=lista)
+
+     return render_template('index.html', paciente=lista, dose = result)
 
 
 

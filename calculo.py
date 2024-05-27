@@ -25,7 +25,10 @@ class calculo:
 
 
 
-
+x = 1
+     calc1 = mg * x
+     calc2 = dose * ml
+     result = calc2 / calc1
 
 
 
@@ -37,6 +40,7 @@ class calculo:
 
 def app ():
     div_horario = horas_dia()
+    consumo = consumo_ml()
 
 def consumo_ml():
 

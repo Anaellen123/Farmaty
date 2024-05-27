@@ -54,7 +54,11 @@
                                     <label for="mg"><strong>Quantas mg? :</strong></label>
                                     <input type="text" id="mg" name="mg"><br><br>
                                     <label for="ml"><strong>quantas ml? :</strong></label>
-                                    <input type="text" id="ml" name="ml">
+                                    <input type="text" id="ml" name="ml"><br><br>
+
+                                    <p><strong>Tomar quantas vezes ao dia ?</strong></p>
+                                    <label for="hora"><strong>Quantas vezes? :</strong></label>
+                                    <input type="text" id="hora" name="hora"><br><br>
                                     <button type="submit" class="btn btn-primary btn-salvar">Salvar</button>
                                 </form>
                         </section>
@@ -63,23 +67,38 @@
                             <h3>Posologia:</h3>
 
                                 <div class="container bg-primary" id="menssagem"><br>
-                                {% for x in paciente %}
                                     <div class="linha ">
 
 
-                                        <p><strong>Para tomar{{ x.dose }}mg da dose preescrita</strong></p>
+                                        <p>
+                                         {% for x in paciente %}
+                                            <strong>
+
+                                            Para tomar{{ x.dose }}mg da dose preescrita
+
+                                            </strong>
+                                        {% endfor %}
+                                        </p>
 
                                     </div><br>
 
                                     <div class="linha ">
 
-                                         <p><strong>será nescessario{{ x.ml }}ml a cada</strong></p>
+                                         <p>
+
+                                             <strong>{{ dose }}</strong>
+
+                                         </p>
 
                                     </div><br>
 
                                     <div class="linha ">
 
-                                        <p><strong>{{ x.mg }}horas pelo periodo preescrito</strong></p>
+                                        <p>
+                                        {% for x in paciente %}
+                                            <strong>{{ x.mg }}horas pelo periodo preescrito</strong>
+                                        {% endfor %}
+                                        </p>
 
                                     </div><br>
 
@@ -88,7 +107,6 @@
                                         <p></p>
 
                                     </div>
-                                {% endfor %}
 
                             </div>
 
