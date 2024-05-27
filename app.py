@@ -24,18 +24,27 @@ class dosagem:
 
 lista = []
 
+
+
 @app.route("/")
 def index():
 
-     return render_template("index.html", paciente=lista)
+     return render_template("index.html")
 
 @app.route('/criar', methods=['POST', ])
 def criar():
-     dose = request.form['dose']
-     mg = request.form['mg']
-     ml = request.form['ml']
+     dose = int(request.form['dose'])
+     mg = int(request.form['mg'])
+     ml = int(request.form['ml'])
      poso = dosagem(dose, mg, ml)
      lista.append(poso)
+
+     x = 1
+     calc1 = mg * x
+     calc2 = dose * ml
+     result = calc2 / calc1
+
+
      return render_template('index.html', paciente=lista)
 
 
