@@ -1,8 +1,9 @@
 #bottom{
-    background-color: #87CEFA;
+    background-image: url("./img/banner.jpg");
     height: 1000px;
 }
 #aspecto_borda {
+
     position: relative;
     top: 10px;
     border-radius: 10px;
@@ -12,7 +13,7 @@
 #conteudo{
     width: 100%;
     height: 900px;
-    background-color:#87CEFA;
+    background-image: url("./img/banner.jpg");
     position: relative;
     top: 10px;
     border: solid 2px #000;
@@ -64,16 +65,14 @@
     align-items: center;
 }
 #info_borda{
-    height: 200px;
+    height: 300px;
     width: 100%;
-    border: 2px solid #fff;
-    border-radius: 10px;
     display: flex;
 
 }
 #info img {
 
-    height: 200px;
+    height: 250px;
 }
 #info p{
      position: relative;
@@ -87,7 +86,8 @@
 
 #section1{
     height: 770px;
-    background-color: #E0FFFF;
+    ;
+
     width: 98%;
     position: relative;
     top: 10px;
