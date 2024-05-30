@@ -49,9 +49,9 @@
 
 }
 /*fechamento da estilização do titulo bem vindo ao farmaty*/
-
+/* primeiro container de informação */
 #info{
-    height: 50px;
+    height: 320px;
     width: 100%;
     background-color: #87CEFA;
     position: relative;
@@ -60,14 +60,30 @@
     text-align: center;
     border: 1px solid #000;
     box-shadow: 5px 10px;
+    display: flex;
+    align-items: center;
 }
+#info_borda{
+    height: 200px;
+    width: 100%;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    display: flex;
 
+}
+#info img {
+
+    height: 200px;
+}
 #info p{
      position: relative;
-     top: 6px;
+     top: 30px;
      font-size: 20px;
 
 }
+
+
+/* fechamento do container de informação */
 
 #section1{
     height: 770px;
