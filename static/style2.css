@@ -1,18 +1,18 @@
 #bottom{
     background-color: #87CEFA;
-    height: 1000px;
+    height: 2000px;
 }
 #aspecto_borda {
 
     position: relative;
     top: 10px;
     border-radius: 10px;
-    height: 950px;
+    height: 1600px;
 
 }
 #conteudo{
     width: 100%;
-    height: 900px;
+    height: 1500px;
     background-color: #87CEFA;
     position: relative;
     top: 10px;
@@ -59,9 +59,9 @@
 /*fechamento da estilização do titulo bem vindo ao farmaty*/
 /* primeiro container de informação */
 #info{
-    height: 320px;
+    height: 420px;
     width: 100%;
-    background-color: #87CEFA;
+    background-color: #87CEEB;
     position: relative;
     top: 7px;
     border-radius: 10px;
@@ -75,11 +75,14 @@
     height: 300px;
     width: 100%;
     display: flex;
+     background-color: #87CEEB;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
 
 }
 #info img {
 
-    height: 250px;
+    height: 290px;
 }
 
 #info p{
@@ -94,7 +97,7 @@
 /* fechamento do container de informação */
 
 #section1{
-    height: 770px;
+    height: 1300px;
     width: 98%;
     position: relative;
     top: 40px;
