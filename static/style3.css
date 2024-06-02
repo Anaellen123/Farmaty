@@ -1,27 +1,22 @@
 #bottom{
-    background-color: #87CEFA;
+    background-color: #ADD8E6;
     height: 2000px;
 }
-#aspecto_borda {
-    width: 100%;
-    position: relative;
-    top: 10px;
-    height: 1600px;
 
-}
 #conteudo{
     width: 100%;
     height: 1500px;
-    background-color: #87CEFA;
+
     position: relative;
     top: 10px;
-    border: solid 2px #000;
-    border-radius: 10px;
+    border-radius: 10px
+
+
 }
 /* abertura do titulo bem vindo ao farmaty da pagina index*/
 #margem1{
     width: 100%;
-    height: 70px;
+    height: 120px;
     display: flex;
     align-items: center;
     position: relative;
@@ -36,7 +31,7 @@
     display: flex;
     text-align: center;
     position: relative;
-    top: 30px;
+    top: 15px;
 }
 
 
@@ -58,23 +53,24 @@
 /*fechamento da estilização do titulo bem vindo ao farmaty*/
 /* primeiro container de informação */
 #info{
-    height: 420px;
+    height: 520px;
     width: 100%;
-    background-color: #87CEEB;
+    background-color: #87CEFA;
     position: relative;
     top: 7px;
     border-radius: 10px;
     text-align: center;
     border: 1px solid #000;
     box-shadow: 5px 10px;
-    display: flex;
-    align-items: center;
+
+
 }
 #info_borda{
     height: 300px;
     width: 100%;
     display: flex;
-     background-color: #87CEEB;
+    align-items: center;
+    background-color: #87CEFA;
     box-shadow: 0 0 10px rgba(0,0,0,0.6);
     -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
 
@@ -99,8 +95,8 @@
     height: 1300px;
     width: 98%;
     position: relative;
-    top: 40px;
-    border-radius: 10px
+    top: 20px;
+
 
 
 }
