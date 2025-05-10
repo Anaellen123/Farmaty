@@ -1,0 +1,321 @@
+/* variaveis de cores */
+:root{
+
+    --azul-royal: #007BFF;
+    --azul-claro: #B3E5FC;
+    --azul-medio: #29B6F6;
+    --azul-escuro: #0D47A1;
+    --branco: #FFFFFF;
+    --cinza-claro: #E0E0E0;
+    --preto-suave: #212121;
+
+}
+
+/* estilização presente no arquivo index_2 */
+/* fundo azul inicial */
+body{
+    background-color: var(--azul-royal);
+    display: flex;
+    justify-content: center;
+    height: 2000px;
+}
+
+#background{
+    background-color: var(--azul-claro);
+    height: 1500px;
+    width: 100%;
+    position: relative;
+    top: 50px;
+    border-radius: 15px;
+}
+
+.container{
+
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* menu de navegação presente no cabeçalho (navebar) */
+.navbar{
+    background-color: var(--azul-medio);
+    position: relative;
+    top: 20px;
+    border: none;
+    border-radius: 15px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+
+}
+/* container de agrupamento dos containers */
+#containers-org-navbar{
+    height: 70px;
+    width: 90% ;
+    /*background-color: green;*/
+    display: flex;
+
+}
+
+/* container que agrupa o icone F e o nome Home */
+#icon-navbar{
+    height: 60px;
+    width: 20%;
+    /*background-color: orange;*/
+    display: flex;
+    gap: 10px
+
+}
+
+/* icone f */
+#icon{
+    height: 50px;
+    width: 50px;
+    background-color: var(--azul-royal);
+    border-radius: 35px;
+    text-align: center;
+    font-size: 33px;
+    color: #FFFFFF;
+
+
+}
+
+/* estelização do nome Home do lado do icone */
+#home{
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+
+
+/* container que acomoda os nomes das outras seções de navegação presente no navbar */
+#text-navbar{
+    height: 60px;
+    width: 30%;
+    /*background-color: pink;*/
+}
+
+/* lista que armazena os links */
+#navbar_nav{
+
+    list-style-type: none; /* remove as bolinhas */
+    padding: 0; /* tira o espaço interno do ul */
+    margin: 0;  /* tira o espaço externo do ul */
+    display: flex; /* coloca os itens lado a lado */
+    gap: 20px; /* espaço entre os links */
+
+}
+
+/* li que armazena o item */
+.nav_item{
+    font-size: 20px;
+    position: relative;
+    top: 10px;
+
+}
+
+/* links do navbar */
+.nav_link{
+
+    text-decoration: none; /* tira o sublinhado */
+    color: #FFFFFF; /* muda a cor dos links, se quiser */
+
+}
+
+/* container da área de conteúdo que armazena os outros containers */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#bottom {
+    padding: 30px;
+    text-align: center;
+    background-color: var(--azul-claro);
+}
+
+#bottom h1 {
+    color: #1b2c3b;
+    margin-bottom: 20px;
+}
+
+#text {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+#calculation {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#dose, #mg, #ml, #hora{
+    border: 1px solid #000;
+    border-radius: 15px;
+    box-shadow: 2px 3px 4px;
+}
+
+#entrada, #saida {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 45%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+#entrada-suporte {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+
+
+.custom-radio {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+  user-select: none;
+}
+
+.custom-radio input[type="radio"] {
+  display: none;
+}
+
+.radio-mark {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+.custom-radio input[type="radio"]:checked + .radio-mark::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 8px;
+  height: 8px;
+  background-color: #333;
+  border-radius: 50%;
+}
+
+
+.ajuste2{
+    position: relative;
+    right: 3px;
+}
+.ajuste{
+    position: relative;
+    right: 12px;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #3399ff;
+    color: white;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #287acc;
+}
+
+
+
+#mensagem {
+    background-color: var(--azul-medio);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    height: 300px;
+    width: 52%;
+    position: relative;
+    left: 140px;
+
+}
+
+.linha{
+    border: 1px solid #000;
+    border-radius: 15px;
+    height: 25px;
+    background-color: #ffffff;
+    box-shadow: 1px 2px 3px;
+    text-align: center;
+    font-size: 12px;
+}
+
+#linha-especial{
+    border: 1px solid #000;
+    border-radius: 10px;
+    height: 80px;
+    background-color: #ffffff;
+    box-shadow: 1px 2px 3px;
+    text-align: center;
+    font-size: 12px;
+}
+
+#img {
+    text-align: center;
+
+}
+
+#img img{
+    border-radius: 15px;
+}
+
+.sem-estilo * {
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    background-image: none !important;
+}
+
+#btn-download {
+    padding: 6px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s;
+}
+
+#btn-download:hover {
+    background-color: #0056b3;
+}

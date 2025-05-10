@@ -1,0 +1,86 @@
+{% extends "header_2.html" %}
+{% block conteudo %}
+    <div id="bottom" class="container">
+    <h1>Bem vindo ao Farmaty</h1>
+
+    <div id="content">
+        <div id="text">
+            <p>
+                Farmaty é um espaço dedicado ao conhecimento sobre medicamentos e seu uso consciente.
+                Aqui você encontra informações úteis sobre categorias de fármacos, dicas de uso e ferramentas
+                para auxiliar na dosagem correta.
+            </p>
+        </div>
+
+        <section id="calculation">
+            <!-- Entrada -->
+            <div id="entrada">
+                <div id="entrada-suporte">
+                    <h3>Informe a Categoria:</h3><br>
+                    <form>
+                          <label class="custom-radio">
+                            <input type="radio" name="categoria" value="antibiotico">
+                            <span class="radio-mark"></span>
+                            Antibiótico
+                          </label><br>
+
+                          <label class="custom-radio">
+                            <input type="radio" name="categoria" value="psicotropico">
+                            <span class="radio-mark"></span>
+                            Psicotrópicos
+                          </label><br>
+
+                          <label class="custom-radio">
+                            <input type="radio" name="categoria" value="outros">
+                            <span class="radio-mark"></span>
+                            Outros
+                          </label><br>
+                    </form>
+
+                </div>
+
+                <div id="calculador">
+                    <h3>Cálculo de Dosagem</h3>
+                    <form action="/criar" method="post">
+                        <label for="dose">Quantas miligramas por dose está prescrita?</label>
+                        <input  type="text" id="dose" name="dose">
+
+                        <label for="mg">Quantas mg vem no frasco?</label>
+                        <input type="text" id="mg" name="mg">
+
+                        <label for="ml">Quantos ml vem no frasco?</label>
+                        <input  type="text" id="ml" name="ml">
+
+                        <label for="hora">Tomar quantas vezes ao dia?</label>
+                        <input  type="text" id="hora" name="hora">
+
+                        <button type="submit">Salvar</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Saída -->
+            <div id="saida">
+
+
+                <div id="area-print">
+                    <h3>Posologia:</h3><br>
+                    <div id="mensagem">
+                        <p class="linha"><strong>{{ posologia }}</strong></p>
+                        <p class="linha"><strong>{{ dose }}</strong></p>
+                        <p class="linha"><strong>{{ hora }}</strong></p>
+                        <p id="linha-especial"><strong>por enquanto nada</strong></p>
+                        <button id="btn-download" onclick="baixarPrint()">Baixar Posologia</button>
+                    </div>
+
+                </div>
+
+                <div id="img">
+                    <img src="static/img/pilulas-gpt.png" alt="Pílulas" width="300">
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+{% endblock %}

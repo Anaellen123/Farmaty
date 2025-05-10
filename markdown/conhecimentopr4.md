@@ -1,0 +1,3 @@
+### Qual foi o primeiro antibiótico descoberto?
+
+O primeiro antibiótico descoberto foi a penicilina, em 1928, pelo médico inglês Alexander Fleming. A descoberta foi acidental, quando um tipo de mofo contaminou uma de suas placas de Petri. Desde então, ela causou um grande impacto na cura de doenças infecciosas. Algumas das doenças que foram solucionadas por antibióticos incluem: tuberculose, pneumonia, sepse, peste negra, peste bubônica e febre tifoide.

@@ -12,23 +12,10 @@ class calculo:
         total_por_dosagem = dosagem / vezes_a_tomar
         print(total_por_dosagem)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-x = 1
-     calc1 = mg * x
-     calc2 = dose * ml
-     result = calc2 / calc1
+        x = 1
+        calc1 = mg * x
+        calc2 = dose * ml
+        result = calc2 / calc1
 
 
 
@@ -71,3 +58,6 @@ def horas_dia():
     print("Ira tomar o medicamento a cada {} horas".format(divs))
 if __name__ == ("__main__") :
     app()
+
+
+

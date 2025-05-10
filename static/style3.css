@@ -1,166 +1,43 @@
-#bottom{
-    background-color: #ADD8E6;
-    height: 2000px;
+#info2{
+    height: 420px;
+    width: 100%;
+    background-color: #87CEEB;
+    position: relative;
+    top: 7px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    box-shadow: 5px 10px;
+    display: flex;
+
+    text-align: center;
+
 }
 
-#conteudo{
-    width: 100%;
-    height: 1500px;
+#pr1{
+    display: flex;
+    align-items: center;
+}
+#img_antibioticos{
+    height: 380px;
+}
 
+
+#section1_1{
+    height: 1300px;
+    width: 98%;
     position: relative;
-    top: 10px;
+    top: 40px;
     border-radius: 10px
 
 
 }
-/* abertura do titulo bem vindo ao farmaty da pagina index*/
-#margem1{
+
+#conteudo_2{
     width: 100%;
-    height: 120px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    top: 5px;
-
-}
-
-#margem2{
-
-    width: 100%;
-    height: 100px;
-    display: flex;
-    text-align: center;
-    position: relative;
-    top: 15px;
-}
-
-
-/*Titulo inicial*/
-#h2{
-   font-size: 45px;
-}
-
-
-#bem-vindo{
-    text-align: center;
-    color: #fff;
-
-
-
-}
-
-/*fechamento tiltulo inicial*/
-/*fechamento da estilização do titulo bem vindo ao farmaty*/
-/* primeiro container de informação */
-#info{
-    height: 520px;
-    width: 100%;
+    height: 1500px;
     background-color: #87CEFA;
     position: relative;
-    top: 7px;
-    border-radius: 10px;
-    text-align: center;
-    border: 1px solid #000;
-    box-shadow: 5px 10px;
-
-
-}
-#info_borda{
-    height: 300px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    background-color: #87CEFA;
-    box-shadow: 0 0 10px rgba(0,0,0,0.6);
-    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
-
-}
-#info img {
-
-    height: 290px;
-}
-
-#info p{
-     position: relative;
-     top: 30px;
-     font-size: 20px;
-
-}
-
-
-
-/* fechamento do container de informação */
-
-#section1{
-    height: 1300px;
-    width: 98%;
-    position: relative;
-    top: 20px;
-
-
-
-}
-
-
-
-#section3{
-    display: flex;
-
-}
-#section2{
-    height: 200px;
-    width: 100%;
-    background-color: #87CEFA;
-    position: relative;
-    top: 23px;
-    border-radius: 10px;
-    border: 1px solid #000;
-    box-shadow: 5px 10px;
-
-}
-#calculador{
-    height:450px;
-    width: 100%;
-    background-color: #87CEFA;
-    position: relative;
-    top: 40px;
-    border-radius: 10px;
-    border: 1px solid #000;
-    box-shadow: 5px 10px;
-
-}
-
-#dosagem{
-    width: 50%;
-
-}
-
-#posologia{
-    width: 50%;
-
-
-}
-
-#menssagem{
-    height: 290px;
-    width: 55%;
-    border: 1px solid #000;
-    border-radius: 10px;
-    box-shadow: 5px 10px
-
-}
-.linha{
-    border: 1px solid #000;
-    border-radius: 10px;
-    width: 100%;
-    height: 25px;
-    background-color: #87CEFA;
-    box-shadow: 5px 10px;
-    text-align: center;
-
-
-}
-
-input{
+    top: 10px;
+    border: solid 2px #000;
     border-radius: 10px;
 }

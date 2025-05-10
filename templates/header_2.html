@@ -1,0 +1,73 @@
+<!--cabeçalho do site-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jogoteca</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'bootstrap.css')}}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/style4.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="background" class="container">
+            <!-- aba do navbar-->
+            <nav class="navbar">
+                <div id="containers-org-navbar">
+
+                    <div id="icon-navbar">
+                       <div id="icon"><p>F</p></div>
+                       <div id="home"><p>Home</p></div>
+                    </div>
+
+                    <div id="text-navbar">
+
+                        <ul id="navbar_nav">
+                            <li class="nav_item"><a class="nav_link" href="#">Conhecimento</a></li>
+                            <li class="nav_item"><a class="nav_link" href="#">Pesquisas</a></li>
+                            <li class="nav_item"><a class="nav_link" href="#">biblioteca</a></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </nav>
+            <!-- navbar -->
+
+        <div>{% block conteudo %} {% endblock %}</div>
+        </div>
+
+   <script>
+
+       function baixarPrint() {
+            const area = document.getElementById("area-print");
+
+            // Adiciona classe temporária para evitar sombras e distorções
+            area.classList.add("sem-estilo");
+
+            html2canvas(area, {
+                useCORS: true,
+                backgroundColor: null
+            }).then(canvas => {
+                const link = document.createElement('a');
+                link.download = 'posologia.png';
+                link.href = canvas.toDataURL();
+                link.click();
+
+                // Remove a classe depois da captura
+                area.classList.remove("sem-estilo");
+            });
+        }
+
+
+   </script>
+
+
+
+</body>

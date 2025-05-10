@@ -5,7 +5,7 @@ hoje = datetime.now()
 print(hoje.date())
 print(hoje.hour)
 
-#a função timedelta serve para realizar contas com dastas
+#a função timedelta serve para realizar contas com datas
 
 
 #variações de datas
