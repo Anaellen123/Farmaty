@@ -22,7 +22,7 @@ body{
 
 #background{
     background-color: var(--azul-claro);
-    height: 1500px;
+    height: 2000px;
     width: 100%;
     position: relative;
     top: 50px;
@@ -134,8 +134,9 @@ body{
 
 #bottom {
     padding: 30px;
+    height: 1850px;
     text-align: center;
-    background-color: var(--azul-claro);
+    background-color: green;
 }
 
 #bottom h1 {
@@ -143,7 +144,7 @@ body{
     margin-bottom: 20px;
 }
 
-#text {
+.text {
     background-color: #ffffff;
     border-radius: 10px;
     padding: 15px;
@@ -289,12 +290,12 @@ button:hover {
     font-size: 12px;
 }
 
-#img {
+.img {
     text-align: center;
 
 }
 
-#img img{
+.img img{
     border-radius: 15px;
 }
 
@@ -319,3 +320,52 @@ button:hover {
 #btn-download:hover {
     background-color: #0056b3;
 }
+
+#conteudo{
+    padding: 20px;
+    width: 100%;
+}
+
+#history{
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 45%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+
+}
+
+#history2{
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 45%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.text-sup{
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#tex-list{
+    display: flex;
+    justify-content: center;
+}
+
+#list{
+    height: 200px;
+    width: 65%;
+    background-color: plum;
+}
+
+.img-list{
+    height: 200px;
+    width: 50%;
+    background-color: yellow;
+}
+
+
+
